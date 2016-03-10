@@ -11,7 +11,7 @@ body {
 
 nav {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
     position: fixed;
 }
 
@@ -26,11 +26,12 @@ nav a:link {
     float: right;
     margin-right: 3em;
     margin-top: 1.5em;
-    color: #fff;
+    color: #592193;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
 }
 
 nav a:visited {
-    color: #fff;
+    color: #592193;
 }
 
 nav a:hover {
@@ -88,7 +89,7 @@ header button {
     background-color: #F4F4F4;
 }
 
-.bio p {
+.bio div {
     max-width: 800px; 
 }
 
@@ -168,10 +169,62 @@ header button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+}
+
+.contact ul {
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.contact li {
+    display: inline-block;
+    margin-left: 2em;
+    margin-right: 2em;
+    height: 2em;
+    width: 2em;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contact #in {
+    background-image: url(imgs/icons/inhov.png);
+}
+
+.contact #in:hover {
+    background-image: url(imgs/icons/in.png);
+}
+
+.contact #mail {
+    background-image: url(imgs/icons/emailhov.png);
+}
+
+.contact #mail:hover {
+    background-image: url(imgs/icons/email.png);
+}
+
+.contact #twit {
+    background-image: url(imgs/icons/twithov.png);
+}
+
+.contact #twit:hover {
+    background-image: url(imgs/icons/twit.png);
+}
+
+.contact #git {
+    background-image: url(imgs/icons/githov.png);
+}
+
+.contact #git:hover {
+    background-image: url(imgs/icons/git.png);
 }
 
 footer {
-    margin-top: 0;
+    margin-top: 0px;
     height: 4em;
     background-color: #F4F4F4;
     font-size: 0.6em;
