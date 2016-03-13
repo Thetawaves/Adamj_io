@@ -11,8 +11,9 @@ body {
 
 nav {
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.35);
     position: fixed;
+    z-index: 9000;
 }
 
 nav img {
@@ -27,7 +28,7 @@ nav a:link {
     margin-right: 3em;
     margin-top: 1.5em;
     color: #592193;
-    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+    font-family: "HelveticaNeue";
 }
 
 nav a:visited {
@@ -67,7 +68,8 @@ header p {
     color: #E1DEDE;     /*max text-width*/
     text-align: center;
     margin-top: 1em;
-    
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 header button {
