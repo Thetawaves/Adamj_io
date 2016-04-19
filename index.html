@@ -1,61 +1,54 @@
 <!DOCTYPE html>
-
 <head>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="icon" href="imgs/logomini.png" type="image/x-icon">
     <title>AdamJ.io</title>
 </head>
-
 <body>
     <nav>
-        <img src="imgs/logo.png"/>
-        <a href="#contact">Contact</a>
-        <a href="#blog">Blog</a>
-        <a href="#bio">About</a>
-        <a href="#">Home</a>
+        <img src="imgs/logo.png" class="logo">
+        <div class="dropdown">
+            <span class="btn"><img src="imgs/dropdown.png"></span>
+            <ul class="menu">
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#bio">About</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </div>
     </nav>
-
     <header>
         <div class="space"></div>
         <h1 class="title">Let your soul <span>be alive.</span></h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam volutpat porttitor neque id ultrices. Pellentesque porta egestas libero in scelerisque. Phasellus sed quam magna.</p>
         <a href="http://en.ecosounds.net/sounds-of-forest/forest-sounds-ambient-sound-of-birds-creek-frogs-and-buzzing-insects/" target="_blank"><button type="button">Show me</button></a>
     </header>
-
     <section class="bio" id="bio">
-        <div>
-            <p>Hi, my name is <span>Adam</span>. I am an innovative technologist, DevOps <strong>architect</strong> and creative thinker. I thrive by <strong>helping people</strong> succeed and realize their vision.</p>
-        </div>
-        <hr>
+        <div><p>Hi, my name is <span>Adam</span>. I am an innovative technologist, DevOps <strong>architect</strong> and creative thinker. I thrive by <strong>helping people</strong> succeed and realize their vision.</p></div><hr>
     </section>
-
     <section class="passion">
-        <h2>My passion</h2>
-        <hr>
-        <div class="img img1"><img src="imgs/Cloud.png"/></div>
-        <div class="img img2"><img src="imgs/Linux.png"/></div>
-        <div class="img img3"><img src="imgs/Git.png"/></div>
-
-        <div class="card card1">
-            <h3>Reach for the clouds</h3>
-            <hr>
-            <p>Suspendisse potenti. Ut sem eros, malesuada eget elit non, porta placerat nisi.</p>
-        </div>
-
-        <div class="card card2">
-            <h3>100% organic</h3><hr>
-            <p>Etiam elementum ex turpis, vel cursus felis andreita. Vitae pulvinar augimos quis.</p>
-        </div>
-
-        <div class="card card3">
-            <h3>Be your legend</h3>
-            <hr>
-            <p>Sed finibus finht non dui. Suspenisse felicidates nubinam non tuis. Quiscuis liberae tus non turpium.</p>
+        <h2>My passion</h2><hr>
+        <div class="cards">
+            <div class="card card1">
+                <div class="img img1"></div>
+                <div><h3>Reach for the clouds</h3><hr>
+                <p>Suspendisse potenti. Ut sem eros, malesuada eget elit non, porta placerat nisi.</p></div>
+            </div>
+            <div class="card card2">
+                <div class="img img2"></div>
+                <div><h3>100% organic</h3><hr>
+                <p>Etiam elementum ex turpis, vel cursus felis andreita. Vitae pulvinar augimos quis.</p></div>
+            </div>
+            <div class="card card3">
+                <div class="img img3"></div>
+                <div><h3>Be your legend</h3><hr>
+                <p>Sed finibus finht non dui. Suspenisse felicidates nubinam non tuis. Quiscuis liberae tus non turpium.</p></div>
+            </div>
         </div>
     </section>
-
-    <section class="blog" id="blog"></section>
-
+    <section class="blog" id="blog">
+    
+    </section>
     <section class="contact" id="contact">
         <ul>
             <a href="https://www.linkedin.com/in/adamjurevicius" target="_blank"><li id="in"></li></a>
@@ -64,7 +57,6 @@
             <a href="https://github.com/ajurevicius" target="_blank"><li id="git"></li></a>
         </ul>
     </section>
-
     <footer>
         <p class="copy">Copyright &copy; HeptaLab, Inc.</p>
         <p class="right">All Rights Reserved</p>
