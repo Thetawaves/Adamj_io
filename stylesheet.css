@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #555555;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    height: 6em;
+    background-color: rgba(255, 255, 255, 0.35);
+    position: fixed;
+    z-index: 9000;
+}
+
+nav .btn {
+    display: none;
+}
+
+nav .logo {
+    float: left;
+    height: 4em;
+    margin: 1em;
+}
+
+nav li {
+    list-style-type: none;
+    list-style: none;
+    float: right;
+    padding: 0.5em;
+    margin-top: 1em;
+}
+
+nav a:link {
+    text-decoration: none;
+    margin-right: 3em;
+    color: #592193;
+    font-family: "HelveticaNeue";
+}
+
+nav a:visited {
+    color: #592193;
+}
+
+nav a:hover {
+    color: #4ED58C;
+}
+
+header {
+    height: 100vh;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imgs/hiking.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.space {
+    height: 40vh;
+}
+
+header h1 {
+    font-weight: 100;
+    font-size: 3em;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+}
+
+header span {
+    font-weight: 100;
+    color: #4ED58C;
+    font-style: italic;
+}
+
+header p {
+    color: #E1DEDE;
+    text-align: center;
+    margin-top: 1em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+header button {
+    text-decoration: none;
+    border: 2px solid #3ED17F;
+    border-radius: 3px;
+    padding: 1em 2.5em;
+    font-size: 1em;
+    color: #3ED17F;
+    background-color: transparent;
+    margin: auto;
+    display: block;
+    margin-top: 2em;
+}
+
+.bio {
+    padding: 3em 3em 3em 3em;
+    text-align: center;
+    background-color: #F4F4F4;
+}
+
+.bio div {
+    max-width: 800px;
+    margin: 3em auto;
+}
+
+.bio span {
+    color: #3ED17F;
+}
+
+.bio hr {
+    margin-top: 3.5em;
+    border-style: solid;
+    color: #592193;
+    width: 15em;
+}
+
+.passion {
+    text-align: center;
+    color: #555555;
+}
+
+.passion h2 {
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-top: 2em;
+}
+
+.passion hr {
+    width: 2em;
+    border-style: solid;
+    color: #3ED17F;
+}
+
+.cards {
+    margin: 1em 2em;
+}
+
+.passion .card {
+    width: 27%;
+    max-width: 50vh;
+    margin: 0 1%;
+    padding: 1em 1em;
+}
+
+.passion .img {
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+.passion .img1 {
+    background-image: url(imgs/Cloud.png);
+}
+
+.passion .img2 {
+    background-image: url(imgs/Linux.png);
+}
+
+.passion .img3 {
+    background-image: url(imgs/Git.png);
+}
+
+.passion .card1 {
+    float: left;
+}
+
+.passion .card2 {
+    display: inline-block;
+} 
+
+.passion .card3 {
+    float: right;
+}
+
+.passion .card h3 {
+    font-weight: 100;
+}
+
+.blog {
+    height: 100vh;
+    background-color: #3ED17F;
+}
+
+.contact {
+    height: 100vh;
+    background-image: url(imgs/mountainfiltered.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.contact ul {
+    list-style: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.contact li {
+    display: inline-block;
+    margin-left: 3em;
+    margin-right: 3em;
+    height: 2em;
+    width: 2em;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contact #in {
+    background-image: url(imgs/icons/inhov.png);
+}
+
+.contact #in:hover {
+    background-image: url(imgs/icons/in.png);
+}
+
+.contact #mail {
+    background-image: url(imgs/icons/emailhov.png);
+}
+
+.contact #mail:hover {
+    background-image: url(imgs/icons/email.png);
+}
+
+.contact #twit {
+    background-image: url(imgs/icons/twithov.png);
+}
+
+.contact #twit:hover {
+    background-image: url(imgs/icons/twit.png);
+}
+
+.contact #git {
+    background-image: url(imgs/icons/githov.png);
+}
+
+.contact #git:hover {
+    background-image: url(imgs/icons/git.png);
+}
+
+footer {
+    margin-top: 0px;
+    height: 4em;
+    background-color: #F4F4F4;
+    font-size: 0.6em;
+}
+
+footer .copy {
+    float: left;
+    margin-left: 6em;
+    margin-top: 1.5em;
+    color: darkgrey;
+}
+
+footer .right {
+    float: right;
+    margin-top: 1.5em;
+    margin-right: 6em;
+    color: darkgrey;
+}
+
+@media screen and (max-width: 640px) {
+    nav .btn {
+        display: block;
+        width: 150px;
+        height: 6em;
+    }
+    
+    nav .btn img {
+        height: 4em;
+        margin-right: 1em;
+        margin-top: 1em;
+        float: right;
+    }
+    
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        float: right;
+    }
+    
+    .dropdown .menu {
+        list-style-type: none;
+        list-style: none;
+        display: none;
+        background-color:  rgba(255, 255, 255, 0.35);
+        position: absolute;
+        min-width: 150px;
+        margin: auto;
+    }
+    
+    .dropdown:hover .menu {
+        display: block;
+    }
+    
+    nav li {
+        margin: 0;
+        padding: 1em;
+    }
+    
+    .passion {
+        height: 170vh;
+    }
+    
+    .passion .card {
+        width: 100%;
+        max-width: none;
+    }
+    
+    .contact li {
+        margin: 0 1em;
+    }
+    
+}
