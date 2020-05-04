@@ -77,11 +77,21 @@ header span {
 }
 
 header p {
-    color: #E1DEDE;
     text-align: center;
     margin-top: 1em;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+header i {
+    color: #E1DEDE;
+}
+
+header .author {
+    color: #E1DEDE;
+    text-align: right;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 header button {
@@ -180,12 +190,13 @@ header button {
     font-weight: 100;
 }
 
-.blog {
-    height: 100vh;
+.contact {
+    height: 5em;
     background-color: #3ED17F;
+    position: relative;
 }
 
-.contact {
+.blog {
     height: 100vh;
     background-image: url(imgs/mountainfiltered.jpg);
     background-size: cover;
